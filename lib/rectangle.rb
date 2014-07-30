@@ -9,4 +9,13 @@ class Rectangle
   def area
     length * width
   end
+
+  def perimeter
+    2 * (length + width )
+  end
+
+
+
+
+
 end

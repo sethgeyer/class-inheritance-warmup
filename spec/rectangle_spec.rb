@@ -13,4 +13,15 @@ describe Rectangle do
       expect(rectangle.area).to eq(20)
     end
   end
+
+
+  describe "#perimeter" do
+    it "returns the perimeter" do
+      expect(rectangle.perimeter).to eq(18)
+    end
+  end
+
+
+
+
 end
