@@ -1,9 +1,25 @@
 class Rectangle
   attr_reader :length, :width
 
-  def initialize(length, width)
+  @@count = 0
+
+  def self.count
+    @@count
+  end
+
+  def self.count=(number)
+    @@count = number
+  end
+
+
+  def initialize(length, width = nil)
     @length = length
-    @width = width
+    @width = if width
+               width
+             else
+               length
+             end
+    @@count += 1
   end
 
   def area
@@ -13,6 +29,5 @@ class Rectangle
   def perimeter
     2 * (length + width )
   end
-
 
 end
