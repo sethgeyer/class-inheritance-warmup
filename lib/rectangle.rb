@@ -15,7 +15,4 @@ class Rectangle
   end
 
 
-
-
-
 end
